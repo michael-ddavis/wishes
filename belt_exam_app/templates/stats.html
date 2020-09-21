@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="container mt-3">
+        <h4 style="float:right"><a href="/wishes" >Dashboard</a> | <a href="/logout">Logout</a></h4>
+        <h2>Hello {{logged_in_user.first_name}}! These are your stats!</h2>
+
+        <h4 class="mt-5">Total wishes gratned so far by all users: {{all_wishes.count}}</h4>
+
+        <h5 class="mt-5">Your granted wishes: {{granted_wishes.count}}</h5>
+        <h5 class="mt-5">Your pending wishes: {{pending_wishes.count}}</h5>
+
+    </div>
+</body>
+
+</html>
